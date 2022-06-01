@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: python-app
+  labels:
+    app: python
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      backend: python
+  template:
+    metadata:
+      labels:
+        backend: python
+    spec:
+      imagePullSecrets:
+      - name: regcred
+      containers:
+      - name: python
+        image: nouranhamdy1998/python-redis-app:v1
+        envFrom:
+        - configMapRef:
+            name: redis-env
+    

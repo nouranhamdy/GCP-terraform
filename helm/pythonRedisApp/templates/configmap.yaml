@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: redis-env
+data:
+  ENVIRONMENT: "gcp"
+  HOST: "localhost"
+  PORT: "8000"
+  REDIS_HOST: "redis-clusterip"
+  REDIS_PORT: "6379"
+  REDIS_DB: "0"
