@@ -4,7 +4,9 @@
 
 replicaCount: 1
 
-
+memcachedImage:
+    repository: jfrog.ais.acquia.io/devops-pipeline/fn-memcached
+    tag: v1.6.31
 image:
   repository: nouranhamdy1998/python-redis-app
   pullPolicy: IfNotPresent
