@@ -18,7 +18,7 @@ spec:
       - name: regcred
       containers:
       - name: python
-        image: nouranhamdy1998/python-redis-app:v1
+        image: {{ .Values.image.repository }}:{{ .Values.image.tag }}
         envFrom:
         - configMapRef:
             name: redis-env
