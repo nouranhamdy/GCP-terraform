@@ -4,15 +4,18 @@
 # https://docs.github.com/code-security/dependabot/dependabot-version-updates/configuration-options-for-the-dependabot.yml-file
 
 version: 2
-# registries:
-#   nouranhamdy1998: # Define access for a private registry
-#     type: docker-registry
-#     url: https://hub.docker.com
-#     username: nouranhamdy1998
-#     password: ${{secrets.DOCKERHUB_TOKEN}}
+registries:
+  private-docker: # Define access for a private registry
+    type: docker-registry
+    url: https://hub.docker.com
+    username: nouranhamdy1998
+    password: ${{secrets.DOCKERHUB_TOKEN}}
 updates:
   - package-ecosystem: "docker" # See documentation for possible values
     directory: "/helm/pythonRedisApp/" # Location of package manifests
     schedule:
       interval: "daily"
       time: "18:10"
+    registries:
+      - private-docker
+    
