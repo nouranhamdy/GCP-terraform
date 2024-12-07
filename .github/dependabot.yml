@@ -12,7 +12,7 @@ registries:
     password: ${{secrets.DOCKERHUB_TOKEN}}
 updates:
   - package-ecosystem: "docker" # See documentation for possible values
-    directory: "/helm/pythonRedisApp/values.yaml" # Location of package manifests
+    directory: "/helm/pythonRedisApp/" # Location of package manifests
     schedule:
       interval: "daily"
       time: "18:10"
