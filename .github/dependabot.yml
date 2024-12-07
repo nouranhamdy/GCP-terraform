@@ -5,7 +5,7 @@
 
 version: 2
 registries:
-  dockerhub: # Define access for a private registry
+  nouranhamdy1998: # Define access for a private registry
     type: docker-registry
     url: registry.hub.docker.com
     username: nouranhamdy1998
