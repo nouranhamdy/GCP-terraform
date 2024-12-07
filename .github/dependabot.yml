@@ -1,0 +1,18 @@
+# To get started with Dependabot version updates, you'll need to specify which
+# package ecosystems to update and where the package manifests are located.
+# Please see the documentation for all configuration options:
+# https://docs.github.com/code-security/dependabot/dependabot-version-updates/configuration-options-for-the-dependabot.yml-file
+
+version: 2
+registries:
+  dockerhub: # Define access for a private registry
+    type: docker-registry
+    url: registry.hub.docker.com
+    username: nouranhamdy1998
+    password: ${{secrets.DOCKERHUB_TOKEN}}
+updates:
+  - package-ecosystem: "docker" # See documentation for possible values
+    directory: "/helm/pythonRedisApp/values.yaml" # Location of package manifests
+    schedule:
+      interval: "daily"
+      time: "18:10"
