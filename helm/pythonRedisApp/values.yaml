@@ -5,8 +5,8 @@
 replicaCount: 1
 
 memcachedImage:
-    registry: ${{secrets.REGISTRY}}
-    repository: ${{secrets.REPO}}
+    registry: jfrog.ais.acquia.io
+    repository: devops-pipeline/fn-memcached
     tag: v1.6.31
 
 nodeImage:
