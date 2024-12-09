@@ -18,5 +18,4 @@ updates:
       time: "18:10"
     registries:
       - private-docker
-    updating-a-pull-request: true
     
