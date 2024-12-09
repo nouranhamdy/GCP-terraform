@@ -7,7 +7,7 @@ version: 2
 registries:
   private-docker: # Define access for a private registry
     type: docker-registry
-    url: ${{secrets.DOCKER_URL}}
+    url: https://jfrog.ais.acquia.io
     username: ${{secrets.DOCKER_USERNAME}}
     password: ${{secrets.DOCKERHUB_TOKEN}}
 updates:
