@@ -4,6 +4,11 @@
 
 replicaCount: 1
 
+memcachedImage:
+    registry: ${{secrets.REGISTRY}}
+    repository: ${{secrets.REPO}}
+    tag: v1.6.31
+
 nodeImage:
     registry: docker.io
     repository: nouranhamdy1998/nodeapp-rds
