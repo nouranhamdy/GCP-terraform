@@ -12,7 +12,7 @@ memcachedImage:
 nodeImage:
     registry: docker.io
     repository: nouranhamdy1998/nodeapp-rds
-    tag: v1
+    tag: v2
 image:
   registry: docker.io
   repository: nouranhamdy1998/python-redis-app
