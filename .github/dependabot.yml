@@ -7,7 +7,7 @@ version: 2
 registries:
   private-docker: # Define access for a private registry
     type: docker-registry
-    url: https://hub.docker.com
+    url: https://docker.io
     username: nouranhamdy1998
     password: ${{secrets.DOCKERHUB_TOKEN}}
 updates:
