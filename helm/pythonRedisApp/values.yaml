@@ -5,10 +5,10 @@
 replicaCount: 1
 
 nodeImage:
-    repository: nouranhamdy1998/nodeapp-rds
+    repository: docker.io/nouranhamdy1998/nodeapp-rds
     tag: v1
 image:
-  repository: nouranhamdy1998/python-redis-app
+  repository: docker.io/nouranhamdy1998/python-redis-app
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
   tag: v1
