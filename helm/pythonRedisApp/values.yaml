@@ -8,7 +8,7 @@ memcached:
     image:
         registry: jfrog.ais.acquia.io
         repository: devops-pipeline/fn-memcached
-        tag: v1.6.31
+        tag: v1.6.32
 
 node:
     image:
