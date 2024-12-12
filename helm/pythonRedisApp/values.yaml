@@ -14,13 +14,13 @@ node:
     image:
         registry: docker.io
         repository: nouranhamdy1998/nodeapp-rds
-        tag: v2
+        tag: v3
 image:
   registry: docker.io
   repository: nouranhamdy1998/python-redis-app
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: v2
+  tag: v3
 
 imagePullSecrets: []
 nameOverride: ""
