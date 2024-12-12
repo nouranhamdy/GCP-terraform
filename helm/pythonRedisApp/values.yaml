@@ -4,15 +4,17 @@
 
 replicaCount: 1
 
-memcachedImage:
-    registry: jfrog.ais.acquia.io
-    repository: devops-pipeline/fn-memcached
-    tag: v1.6.31
+memcached:
+    image:
+        registry: jfrog.ais.acquia.io
+        repository: devops-pipeline/fn-memcached
+        tag: v1.6.31
 
-nodeImage:
-    registry: docker.io
-    repository: nouranhamdy1998/nodeapp-rds
-    tag: v2
+node:
+    image:
+        registry: docker.io
+        repository: nouranhamdy1998/nodeapp-rds
+        tag: v2
 image:
   registry: docker.io
   repository: nouranhamdy1998/python-redis-app
