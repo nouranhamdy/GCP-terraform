@@ -7,19 +7,19 @@ replicaCount: 1
 memcached:
     image:
         repository: jfrog.ais.acquia.io/devops-pipeline/fn-memcached
-        tag: v1.6.32
+        tag: v1.6.31
 
 node:
     image:
         registry: docker.io
         repository: nouranhamdy1998/nodeapp-rds
-        tag: v3
+        tag: v2
 image:
   registry: docker.io
   repository: nouranhamdy1998/python-redis-app
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: v3
+  tag: v2
 
 imagePullSecrets: []
 nameOverride: ""
