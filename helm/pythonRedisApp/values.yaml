@@ -6,8 +6,7 @@ replicaCount: 1
 
 memcached:
     image:
-        registry: jfrog.ais.acquia.io
-        repository: devops-pipeline/fn-memcached
+        repository: jfrog.ais.acquia.io/devops-pipeline/fn-memcached
         tag: v1.6.32
 
 node:
